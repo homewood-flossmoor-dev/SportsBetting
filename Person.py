@@ -1,16 +1,15 @@
 class User:
     def __init__(self,Username,Email,Password):
-    self.Username = Username
-    self.Email = Email
-    self.Password = Password
-    
-    def Username = str(input("Username: "))
-    def Email = str(input("Email: "))
-    ConfirmEmail = str(input("Confirm Email: "))
-    if ConfirmEmail != Email:
-        print("Emails do not match!")
-    else:
-        def Password = str(input("Password: "))
-        ConfirmPassword = str(input("Confirm Password: "))
-        if ConfirmPassword != Password:
-            print("Passwords do not match!")
+        self.Username = Username
+        self.Email = Email
+        self.Password = Password
+    def PrintCharacteristics(self):
+        print("Username: "+self.Username)
+        print("Email: "+self.Email)
+
+    def Username = str(input("Username: ")) 
+
+person_one = User("Username","Email","Password")
+
+person_one.PrintCharacteristics()
+
